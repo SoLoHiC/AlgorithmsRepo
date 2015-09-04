@@ -9,12 +9,12 @@ public class BruteForceStringMatch {
     }
 
     public static int bruteForceStringMatch(String text, String pattern) {
-        for(int i = 0; i < text.length() - pattern.length() + 1; i++) {
+        for (int i = 0; i < text.length() - pattern.length() + 1; i++) {
             int j = 0;
-            while(j < pattern.length() && text.charAt(i+j) == pattern.charAt(j)) {
+            while (j < pattern.length() && text.charAt(i + j) == pattern.charAt(j)) {
                 j++;
             }
-            if(j == pattern.length()) {
+            if (j == pattern.length()) {
                 return i;
             }
         }
